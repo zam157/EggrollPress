@@ -51,6 +51,7 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: '/favicon.png',
+    socialLinks: [{ icon: 'github', link: 'https://github.com/zam157/EggrollPress' }],
     sidebar: [
       {
         text: '试刊',
