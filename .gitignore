@@ -4,6 +4,7 @@
 *.local
 dist
 dist-ssr
+.vitepress/dist
 node_modules
 .idea/
 *.log

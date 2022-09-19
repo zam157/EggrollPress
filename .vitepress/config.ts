@@ -42,6 +42,7 @@ export default defineConfig({
   description: '一个非官方蛋卷俱乐部刊物网站',
   lang: 'zh-CN',
   srcDir: 'src',
+  base: '/EggrollPress/',
   themeConfig: {
     sidebar: [
       {
