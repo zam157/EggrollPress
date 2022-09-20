@@ -54,6 +54,8 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/zam157/EggrollPress' }],
     sidebar: [
       {
+        collapsible: true,
+        collapsed: true,
         text: '试刊',
         items: [
           { text: '黑马奖', link: '/0/black-horse' },
@@ -65,6 +67,8 @@ export default defineConfig({
         ],
       },
       {
+        collapsible: true,
+        collapsed: true,
         text: '第一期',
         items: [
           { text: '黑马奖', link: '/1/black-horse' },
@@ -72,6 +76,20 @@ export default defineConfig({
           { text: '观众社论', link: '/1/comments' },
           { text: '体验', link: '/1/experiences' },
           { text: '附', link: '/1/bonus' },
+        ],
+      },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第二期',
+        items: [
+          { text: '黑马奖', link: '/2/black-horse' },
+          { text: '合订本', link: '/2/bound-volume' },
+          { text: '线索', link: '/2/clues' },
+          { text: '观众社论', link: '/2/comments' },
+          { text: '段子', link: '/2/memes' },
+          { text: '体验', link: '/2/experiences' },
+          { text: '带货', link: '/2/commerce' },
         ],
       },
     ],
