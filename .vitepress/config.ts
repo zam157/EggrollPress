@@ -37,17 +37,20 @@ import Unocss from 'unocss/vite'
 //   ariaSidebarNav: '侧边栏导航',
 // }
 
+const base = '/EggrollPress/'
+const faviconHref = `${base}favicon.png`
+
 export default defineConfig({
   title: 'EggrollPress',
   description: '一个非官方蛋卷俱乐部刊物网站',
   lang: 'zh-CN',
   srcDir: 'src',
-  base: '/EggrollPress/',
+  base,
   head: [
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon.png' }],
-    ['link', { rel: 'shortcut icon', href: '/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: faviconHref }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconHref }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconHref }],
+    ['link', { rel: 'shortcut icon', href: faviconHref }],
   ],
   themeConfig: {
     logo: '/favicon.png',
