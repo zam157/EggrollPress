@@ -1,3 +1,6 @@
 {
-  "volar.vueserver.vitePress.processMdFile": true
+  "volar.vueserver.vitePress.processMdFile": true,
+  "path-intellisense.mappings": {
+    "$/": "${workspaceFolder}/src/public/"
+  },
 }
