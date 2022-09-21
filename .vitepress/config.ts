@@ -55,6 +55,9 @@ export default defineConfig({
   themeConfig: {
     logo: '/favicon.png',
     socialLinks: [{ icon: 'github', link: 'https://github.com/zam157/EggrollPress' }],
+    nav: [
+      { text: '✨征稿通知', link: '/solicit-contributions' },
+    ],
     sidebar: [
       {
         collapsible: true,
@@ -66,7 +69,6 @@ export default defineConfig({
           { text: '观众社论', link: '/0/comments' },
           { text: '线索', link: '/0/clues' },
           { text: '段子', link: '/0/memes' },
-          { text: '附', link: '/0/bonus' },
         ],
       },
       {
@@ -78,7 +80,6 @@ export default defineConfig({
           { text: '线索', link: '/1/clues' },
           { text: '观众社论', link: '/1/comments' },
           { text: '体验', link: '/1/experiences' },
-          { text: '附', link: '/1/bonus' },
         ],
       },
       {
@@ -109,6 +110,14 @@ export default defineConfig({
         ],
       },
     ],
+    // algolia: {
+    //   indexName: 'eggroll_press',
+    //   appId: 'MJAMQS9CDR',
+    //   apiKey: 'fdc84149fec5f459a4911f8ab5adda66',
+    //   searchParameters: {
+    //     facetFilters: ['version:v3'],
+    //   },
+    // },
   },
   vite: {
     plugins: [
