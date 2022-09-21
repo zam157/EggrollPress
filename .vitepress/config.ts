@@ -92,6 +92,19 @@ export default defineConfig({
           { text: '带货', link: '/2/commerce' },
         ],
       },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第三期',
+        items: [
+          { text: '黑马奖', link: '/3/black-horse' },
+          { text: '线索', link: '/3/clues' },
+          { text: '观众社论', link: '/3/comments' },
+          { text: '编读往来', link: '/3/communication' },
+          { text: '体验', link: '/3/experiences' },
+          { text: '带货', link: '/3/commerce' },
+        ],
+      },
     ],
   },
   vite: {
