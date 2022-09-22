@@ -1,7 +1,8 @@
 {
   "editor.fontFamily": "'等距更纱黑体 SC'",
   "volar.vueserver.vitePress.processMdFile": true,
-  "path-intellisense.mappings": {
-    "$/": "${workspaceFolder}/src/public/"
-  },
+  // "path-intellisense.mappings": {
+  //   "$/": "${workspaceFolder}/src/public/"
+  // },
+  "markdown.extension.completion.root": "/src/public",
 }
