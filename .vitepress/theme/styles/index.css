@@ -7,3 +7,7 @@ body {
 .VPSidebar {
   overscroll-behavior: contain;
 }
+
+body:has(.VPSidebar.open) {
+  overflow: hidden;
+}
