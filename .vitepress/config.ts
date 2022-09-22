@@ -109,6 +109,19 @@ export default defineConfig({
           { text: '带货', link: '/3/commerce' },
         ],
       },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第四期',
+        items: [
+          { text: '黑马奖', link: '/4/black-horse' },
+          { text: '体验', link: '/4/experiences' },
+          { text: '线索', link: '/4/clues' },
+          { text: '观众社论', link: '/4/comments' },
+          { text: '编读往来', link: '/4/communication' },
+          { text: '读书', link: '/4/read' },
+        ],
+      },
     ],
     // algolia: {
     //   indexName: 'eggroll_press',
