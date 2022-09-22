@@ -122,6 +122,20 @@ export default defineConfig({
           { text: '读书', link: '/4/read' },
         ],
       },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第五期',
+        items: [
+          { text: '黑马奖', link: '/5/black-horse' },
+          { text: '体验', link: '/5/experiences' },
+          { text: '线索', link: '/5/clues' },
+          { text: '观众社论', link: '/5/comments' },
+          { text: '编读往来', link: '/5/communication' },
+          { text: '读书', link: '/5/read' },
+          { text: '另类参考', link: '/5/inverse' },
+        ],
+      },
     ],
     // algolia: {
     //   indexName: 'eggroll_press',
