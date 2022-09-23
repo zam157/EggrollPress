@@ -136,6 +136,19 @@ export default defineConfig({
           { text: '另类参考', link: '/5/inverse' },
         ],
       },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第六期',
+        items: [
+          { text: '黑马奖', link: '/6/black-horse' },
+          { text: '编读往来', link: '/6/communication' },
+          { text: '观众社论', link: '/6/editorial' },
+          { text: '线索', link: '/6/clues' },
+          { text: '合订本', link: '/6/bound-volume' },
+          { text: '评论选登', link: '/6/comments' },
+        ],
+      },
     ],
     // algolia: {
     //   indexName: 'eggroll_press',
