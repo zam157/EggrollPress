@@ -62,7 +62,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '试刊',
+        text: '试刊(22.07.17)',
         items: [
           { text: '黑马奖', link: '/0/black-horse' },
           { text: '合订本', link: '/0/bound-volume' },
@@ -74,7 +74,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第一期',
+        text: '第一期(22.07.25)',
         items: [
           { text: '黑马奖', link: '/1/black-horse' },
           { text: '线索', link: '/1/clues' },
@@ -85,7 +85,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第二期',
+        text: '第二期(22.08.01)',
         items: [
           { text: '黑马奖', link: '/2/black-horse' },
           { text: '合订本', link: '/2/bound-volume' },
@@ -99,7 +99,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第三期',
+        text: '第三期(22.08.09)',
         items: [
           { text: '黑马奖', link: '/3/black-horse' },
           { text: '线索', link: '/3/clues' },
@@ -112,7 +112,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第四期',
+        text: '第四期(22.08.16)',
         items: [
           { text: '黑马奖', link: '/4/black-horse' },
           { text: '体验', link: '/4/experiences' },
@@ -125,7 +125,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第五期',
+        text: '第五期(22.08.24)',
         items: [
           { text: '黑马奖', link: '/5/black-horse' },
           { text: '体验', link: '/5/experiences' },
@@ -139,7 +139,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第六期',
+        text: '第六期(22.09.01)',
         items: [
           { text: '黑马奖', link: '/6/black-horse' },
           { text: '编读往来', link: '/6/communication' },
@@ -152,7 +152,7 @@ export default defineConfig({
       {
         collapsible: true,
         collapsed: true,
-        text: '第七期',
+        text: '第七期(22.09.12)',
         items: [
           { text: '黑马奖', link: '/7/black-horse' },
           { text: '体验', link: '/7/experiences' },
