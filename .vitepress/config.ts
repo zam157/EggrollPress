@@ -149,6 +149,20 @@ export default defineConfig({
           { text: '评论选登', link: '/6/comments' },
         ],
       },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第七期',
+        items: [
+          { text: '黑马奖', link: '/7/black-horse' },
+          { text: '体验', link: '/7/experiences' },
+          { text: '编读往来', link: '/7/communication' },
+          { text: '观众社论', link: '/7/editorials' },
+          { text: '线索', link: '/7/clues' },
+          { text: '读书', link: '/7/read' },
+          { text: '评论选登', link: '/7/comments' },
+        ],
+      },
     ],
     // algolia: {
     //   indexName: 'eggroll_press',
