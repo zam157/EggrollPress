@@ -163,6 +163,20 @@ export default defineConfig({
           { text: '评论选登', link: '/7/comments' },
         ],
       },
+      {
+        collapsible: true,
+        collapsed: true,
+        text: '第八期(22.10.24)',
+        items: [
+          { text: '黑马奖', link: '/8/black-horse' },
+          { text: '读书', link: '/8/read' },
+          { text: '观众社论', link: '/8/editorials' },
+          { text: '体验', link: '/8/experiences' },
+          { text: '编读往来', link: '/8/communication' },
+          { text: '合订本', link: '/8/bound-volume' },
+          { text: '评论选登', link: '/8/comments' },
+        ],
+      },
     ],
     // algolia: {
     //   indexName: 'eggroll_press',
