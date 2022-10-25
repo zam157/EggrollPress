@@ -11,5 +11,9 @@
     "jsx": "preserve",
     "baseUrl": "."
   },
-  "include": ["env.d.ts", "src/**/*", ".vitepress/**/*"]
+  "paths": {
+    "~/*": ["src/*"]
+  },
+  // "include": ["env.d.ts", "src/**/*", ".vitepress/**/*"]
+  "exclude": ["dist", "node_modules"]
 }
