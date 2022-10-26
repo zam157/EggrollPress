@@ -5,5 +5,6 @@
   //   "$/": "${workspaceFolder}/src/public/"
   // },
   "markdown.extension.completion.root": "/src/public",
-  "editor.dragAndDrop": true
+  "editor.dragAndDrop": true,
+  "references.preferredLocation": "peek"
 }

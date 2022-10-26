@@ -4,10 +4,26 @@ body {
   --vp-font-family-base: "Noto Sans SC", sans-serif, "Inter var experimental", "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* sidebar scroll behavior */
 .VPSidebar {
   overscroll-behavior: contain;
 }
-
 body:has(.VPSidebar.open) {
   overflow: hidden;
 }
+
+/* Image preview */
+.medium-zoom-overlay {
+  /* set color value to hex with alpha to support backdrop-filter */
+  background-color: var(--vp-c-bg)E6 !important;
+  backdrop-filter: blur(6px);
+  z-index: 20;
+}
+.medium-zoom-overlay ~ img {
+  z-index: 21;
+}
+
+/* .medium-zoom--opened .medium-zoom-overlay {
+  opacity: 0.8 !important;
+  backdrop-filter: blur(6px);
+} */
