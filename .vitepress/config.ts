@@ -1,3 +1,4 @@
+import fs from 'fs'
 import { defineConfig } from 'vitepress'
 import Unocss from 'unocss/vite'
 
@@ -40,6 +41,28 @@ import Unocss from 'unocss/vite'
 const base = '/EggrollPress/'
 const faviconHref = `${base}favicon.png`
 
+const resolveSidebarFiles = () => {
+  const clubDir = './src/club'
+  const mdRegex = /^[\s\S]*\.md$/ // match .md files
+  const sidebar = fs.readdirSync(clubDir)
+    .filter(fileName => fs.statSync(`${clubDir}/${fileName}`).isDirectory()) // save folders
+    .map((folderName) => {
+      const mdFiles = fs.readdirSync(`${clubDir}/${folderName}`)
+        .filter(fileName => mdRegex.test(fileName))
+      return {
+        collapsible: true,
+        collapsed: true,
+        text: folderName,
+        items: mdFiles.map((mdFileName) => {
+          const noSuffix = mdFileName.replace('.md', '')
+          return ({ text: noSuffix, link: `/club/${folderName}/${noSuffix}` })
+        }),
+      }
+    })
+
+  return sidebar
+}
+
 export default defineConfig({
   title: 'EggrollPress',
   description: '一个非官方蛋卷俱乐部刊物网站',
@@ -58,126 +81,7 @@ export default defineConfig({
     nav: [
       { text: '✨征稿通知', link: '/solicit-contributions' },
     ],
-    sidebar: [
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '试刊(22.07.17)',
-        items: [
-          { text: '黑马奖', link: '/0/black-horse' },
-          { text: '合订本', link: '/0/bound-volume' },
-          { text: '观众社论', link: '/0/editorials' },
-          { text: '线索', link: '/0/clues' },
-          { text: '段子', link: '/0/memes' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第一期(22.07.25)',
-        items: [
-          { text: '黑马奖', link: '/1/black-horse' },
-          { text: '线索', link: '/1/clues' },
-          { text: '观众社论', link: '/1/editorials' },
-          { text: '体验', link: '/1/experiences' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第二期(22.08.01)',
-        items: [
-          { text: '黑马奖', link: '/2/black-horse' },
-          { text: '合订本', link: '/2/bound-volume' },
-          { text: '线索', link: '/2/clues' },
-          { text: '观众社论', link: '/2/editorials' },
-          { text: '段子', link: '/2/memes' },
-          { text: '体验', link: '/2/experiences' },
-          { text: '带货', link: '/2/commerce' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第三期(22.08.09)',
-        items: [
-          { text: '黑马奖', link: '/3/black-horse' },
-          { text: '线索', link: '/3/clues' },
-          { text: '观众社论', link: '/3/editorials' },
-          { text: '编读往来', link: '/3/communication' },
-          { text: '体验', link: '/3/experiences' },
-          { text: '带货', link: '/3/commerce' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第四期(22.08.16)',
-        items: [
-          { text: '黑马奖', link: '/4/black-horse' },
-          { text: '体验', link: '/4/experiences' },
-          { text: '线索', link: '/4/clues' },
-          { text: '观众社论', link: '/4/editorials' },
-          { text: '编读往来', link: '/4/communication' },
-          { text: '读书', link: '/4/read' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第五期(22.08.24)',
-        items: [
-          { text: '黑马奖', link: '/5/black-horse' },
-          { text: '体验', link: '/5/experiences' },
-          { text: '线索', link: '/5/clues' },
-          { text: '观众社论', link: '/5/editorials' },
-          { text: '编读往来', link: '/5/communication' },
-          { text: '读书', link: '/5/read' },
-          { text: '另类参考', link: '/5/inverse' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第六期(22.09.01)',
-        items: [
-          { text: '黑马奖', link: '/6/black-horse' },
-          { text: '编读往来', link: '/6/communication' },
-          { text: '观众社论', link: '/6/editorials' },
-          { text: '线索', link: '/6/clues' },
-          { text: '合订本', link: '/6/bound-volume' },
-          { text: '评论选登', link: '/6/comments' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第七期(22.09.12)',
-        items: [
-          { text: '黑马奖', link: '/7/black-horse' },
-          { text: '体验', link: '/7/experiences' },
-          { text: '编读往来', link: '/7/communication' },
-          { text: '观众社论', link: '/7/editorials' },
-          { text: '线索', link: '/7/clues' },
-          { text: '读书', link: '/7/read' },
-          { text: '评论选登', link: '/7/comments' },
-        ],
-      },
-      {
-        collapsible: true,
-        collapsed: true,
-        text: '第八期(22.10.24)',
-        items: [
-          { text: '黑马奖', link: '/8/black-horse' },
-          { text: '读书', link: '/8/read' },
-          { text: '观众社论', link: '/8/editorials' },
-          { text: '体验', link: '/8/experiences' },
-          { text: '编读往来', link: '/8/communication' },
-          { text: '合订本', link: '/8/bound-volume' },
-          { text: '评论选登', link: '/8/comments' },
-        ],
-      },
-    ],
+    sidebar: resolveSidebarFiles(),
     // algolia: {
     //   indexName: 'eggroll_press',
     //   appId: 'MJAMQS9CDR',
