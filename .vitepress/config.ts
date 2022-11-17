@@ -43,6 +43,7 @@ export default defineConfig({
       sidebarGroupGenerator('第6期(22.09.01)', ['黑马奖', '编读往来', '观众社论', '线索', '合订本', '评论选登']),
       sidebarGroupGenerator('第7期(22.09.12)', ['黑马奖', '体验', '编读往来', '观众社论', '线索', '读书', '评论选登']),
       sidebarGroupGenerator('第8期(22.10.24)', ['黑马奖', '读书', '观众社论', '体验', '编读往来', '合订本', '评论选登']),
+      sidebarGroupGenerator('第9期(22.11.16)', ['黑马奖', '编读往来', '线索', '观众社论', '体验']),
     ],
     editLink: {
       pattern: 'https://github.com/zam157/EggrollPress/edit/master/src/:path',
