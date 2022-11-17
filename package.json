@@ -8,18 +8,18 @@
   },
   "dependencies": {
     "@vue/theme": "^1.2.2",
-    "medium-zoom": "^1.0.6",
-    "vitepress": "1.0.0-alpha.26",
-    "vue": "^3.2.41"
+    "medium-zoom": "^1.0.8",
+    "vitepress": "1.0.0-alpha.29",
+    "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.27.0",
-    "@types/node": "^18.11.7",
-    "@vue/runtime-core": "^3.2.41",
-    "eslint": "^8.26.0",
-    "typescript": "^4.8.4",
-    "unocss": "^0.46.1",
-    "vite": "^3.2.0"
+    "@antfu/eslint-config": "^0.31.0",
+    "@types/node": "^18.11.9",
+    "@vue/runtime-core": "^3.2.45",
+    "eslint": "^8.27.0",
+    "typescript": "^4.9.3",
+    "unocss": "^0.46.5",
+    "vite": "^3.2.4"
   },
   "eslintConfig": {
     "extends": "@antfu"
